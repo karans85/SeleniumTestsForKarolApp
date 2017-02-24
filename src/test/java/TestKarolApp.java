@@ -52,15 +52,11 @@ public class TestKarolApp {
 
     }
 
-    /*@Test
-    public void fieldsRemainFilledInBrowserFirefox() throws InterruptedException {
+    @Test
+    public void fieldsRemainFilledIn() throws InterruptedException {
 
         //Given
 
-            driver = new FirefoxDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.get("http://localhost:8080/");
         WebElement inputTitle = driver.findElement(By.xpath(".//*[@id='titleInput']"));
         WebElement inputDescription = driver.findElement(By.xpath(".//*[@id='descriptionArea']"));
         WebElement inputRating = driver.findElement(By.xpath(".//*[@id='ratingInput']"));
@@ -78,7 +74,7 @@ public class TestKarolApp {
         //Then
         Assert.assertFalse(text.isEmpty());
 
-    }*/
+    }
 
     @Test
     public void titleTextNotFormatted() throws InterruptedException {
